@@ -1,0 +1,170 @@
+/*
+    Se definen los estilos para el fondo del proyecto
+*/
+
+#Panel_principal{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 10px 0px;
+
+    background: linear-gradient(to top, rgb(34, 34, 34) ,
+                                 rgb(163, 163, 163) 5% , 
+                                 black,black 40%,black 80%  , 
+                                 rgb(163, 163, 163)95%, 
+                                 rgb(34, 34, 34) );
+    border-radius: 20px;
+
+
+}
+
+/* Se define los estilos del area de presentacion*/
+#Panel_laboratorio{
+    width: 95%;
+    height: 55vh ;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid rgba(91, 161, 175, 0.573);
+    
+    background: linear-gradient(
+        to top, 
+        
+        rgba(3, 150, 150, 0.815) 10%, 
+        rgb(104, 65, 58) 50%,
+        rgba(32, 83, 81, 0.39) 98% );
+}
+
+#mascara{
+    width: 100%;
+    border: 1px solid red;
+    
+}
+
+/*
+    Se define los estilos para el area de control
+*/
+
+#Panel_datos{
+  
+    width: 95%;
+    height: calc(45vh - 30px);
+    margin: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 10px solid transparent;
+    border-radius: 10px;
+
+    background: linear-gradient(to top, rgb(153, 153, 153) ,
+                                 rgb(175, 169, 169) 5% , 
+                                 rgb(185, 185, 185),
+                                 rgba(184, 184, 184, 0.822) );
+
+}
+
+$borde: 3px solid rgb(88, 88, 88);
+
+
+#Panel_btn{
+    margin: 0px 20px;
+}
+
+/*
+    Contorno del area de controles
+*/
+#Panel_input, #Panel_output{
+    border-left: $borde;
+    border-bottom: $borde;
+    height: calc(45vh - 50px);
+    
+
+}
+
+.contorno {
+    border-top: $borde;
+    border-right: $borde;
+    
+
+}
+.borde-r{
+    margin-top: 25px;
+    border-top: $borde;  
+     
+}
+
+.section-datos{
+    border-right: $borde;
+   
+    height: calc(45vh - 80px);
+}   
+
+
+
+
+
+@media screen and (min-width: 600px){
+    #Panel_output{
+      
+        width: 33.33333333%;
+        
+        
+    }
+    .title_panel{
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #Panel_output{
+       
+        width: 34.5%;
+    }
+
+    .title_panel{
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #Panel_output{
+       
+        width: 35.5%;
+        
+    }
+}
+
+@media screen and (min-width: 1160px){
+    #Panel_output{
+        width: 37%;
+
+    }
+    .title_panel{
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        justify-content: start;
+    }
+}
+
+
+.btn-img{
+    background-image: url("../../src/assets/play.png");
+    background-repeat:no-repeat;
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    background-size: 50px 50px;
+    background-position:center;
+    margin: 10px 0px;
+
+}
+
+
+
